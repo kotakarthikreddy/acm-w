@@ -996,6 +996,10 @@ body {
   position: relative;
   overflow: hidden;
 }
+.member{
+  height: 90%;
+  width: 95%;
+}
 
 .team .member .member-info {
   opacity: 0;
