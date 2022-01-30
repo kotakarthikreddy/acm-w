@@ -711,10 +711,15 @@ h3{
 }
 
 .swiper-slide img {
-  display: block;
   border-radius: 20px;
-  width: 60%;
-  height: 50%;
+  width: 90%;
+  height: 80%;
+  
+}
+.swiper-slide video {
+  border-radius: 20px;
+  width: 90%;
+  height: 80%;
   
 }
 
@@ -747,7 +752,7 @@ body {
 }
 
 .mySwiper .swiper-slide {
-  width: 25%;
+  width: 5%;
   height: 100%;
   opacity: 0.4;
 }
@@ -756,13 +761,42 @@ body {
   opacity: 1;
 }
 
-.swiper-slide img {
+.swiper-slide a img {
   display: block;
   width:100%;
   height:100%;
-  object-fit: cover;
+  object-fit: contain;
+}
+.swiper-slide video {
+  display: block;
+  width:100%;
+  height:100%;
+  object-fit: contain;
 }
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 
 
 
@@ -928,7 +962,7 @@ body {
   padding-top: 40px;
 }
 
-.portfolio-details .portfolio-details-slider img {
+.portfolio-details .portfolio-details-slider img video{
   width: 100%;
 }
 
